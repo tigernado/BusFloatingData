@@ -25,6 +25,9 @@ import sbtassembly.MergeStrategy
  * root build.sbt
  */
 
+javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
+
+
 //needed for crosscompilation ...
 autoCompilerPlugins := true
 
